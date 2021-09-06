@@ -90,7 +90,7 @@ header{
 .wrapper{
     height: 200px;
     display:flex; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
