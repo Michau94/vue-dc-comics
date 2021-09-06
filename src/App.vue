@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <Content/>
+    <Bonus/>
     <Footer/>
     <Media/>
   </div>
@@ -12,6 +13,7 @@ import Header from '@/components/Header.vue'
 import Content from '@/components/Content.vue'
 import Footer from '@/components/Footer.vue'
 import Media from '@/components/Media.vue'
+import Bonus from '@/components/Bonus.vue'
 
 
 export default {
@@ -20,7 +22,8 @@ export default {
     Header,
     Content,
     Footer,
-    Media
+    Media,
+    Bonus
     
   },
   
@@ -44,5 +47,9 @@ body{
   max-width: 1500px;
   margin: 0 auto; 
   height: 100%;
+}
+
+.clickable{
+  cursor: pointer;
 }
 </style>
