@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
+
 .media {
   background-color: #242424;
   height: 100px;
@@ -56,7 +58,7 @@ export default {
   h3 {
     text-transform: uppercase;
     font-weight: 500;
-    color: #0c7cec;
+    color: $base-color;
   }
 }
 

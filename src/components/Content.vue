@@ -1,33 +1,25 @@
 <template>
-<section>
+  <section>
     <div class="container">
-
-                <h2>Contenuto qui!!!</h2>
+      <h2>Contenuto qui!!!</h2>
     </div>
-    
-</section>
-  
+  </section>
 </template>
 
 <script>
 export default {
-    name:'Content',
-
-}
+  name: "Content",
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+section {
+  height: 200px;
+  background-color: black;
 
-section{
-    height: 200px;
-    background-color: black;
-}
-
-h2{
+  h2 {
     color: white;
     line-height: 200px;
+  }
 }
-
-
-
 </style>
