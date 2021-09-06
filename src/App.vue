@@ -3,6 +3,7 @@
     <Header/>
     <Content/>
     <Footer/>
+    <Media/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from '@/components/Header.vue'
 import Content from '@/components/Content.vue'
 import Footer from '@/components/Footer.vue'
+import Media from '@/components/Media.vue'
 
 
 export default {
@@ -17,7 +19,8 @@ export default {
   components: {
     Header,
     Content,
-    Footer
+    Footer,
+    Media
     
   },
   
@@ -34,10 +37,12 @@ export default {
 
 body{
   font-family: 'Raleway', sans-serif;
+  
 }
 
 .container{
   max-width: 1500px;
   margin: 0 auto; 
+  height: 100%;
 }
 </style>
