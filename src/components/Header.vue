@@ -81,52 +81,44 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 
 header{
-    height:200px; 
+  height:200px; 
 }
 
-.wrapper{
-    height: 200px;
-    display:flex; 
-    justify-content: space-between;
-    align-items: center;
+.wrapper{ 
+  align-items: center;
 }
 
 nav ul{
-    display: flex;
+  display: flex;
     align-items: center;
     height: 200px;
+
+    li{
+      margin:10px;
+        list-style-type: none;
+        height: 100%;
+        line-height: 200px;
+
+      &:hover,
+      &.active  {
+          border-bottom: 5px solid black;
+          border-color: #0C7CEC;
+          
+      }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: darkgray;
+            font-size: 0.8rem;
+            padding:10px;
+            
+        }
+    }
 }
-
-nav ul li{
-    margin:10px;
-    list-style-type: none;
-    height: 100%;
-    line-height: 200px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: darkgray;
-    font-size: 0.8rem;
-    padding:10px;
-    
-}
-
-li:hover,
-li.active  {
-    border-bottom: 5px solid black;
-    border-color: #0C7CEC;
-    
-}
-
-
-
-
 
 
 </style>

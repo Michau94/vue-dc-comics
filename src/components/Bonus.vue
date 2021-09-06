@@ -34,13 +34,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 
-.wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 
 .bonus{
     height: 200px;
@@ -54,18 +49,20 @@ export default {
     display: flex;
     align-items: center;
     
+     img{
+        width: 100%;
+        height: 100px;
+        padding: 10px; 
+    }
+
+     span{
+        color: #fff;
+        font-weight: 500;
+    }
+
 }
 
-.card img{
-    width: 100%;
-    height: 100px;
-    padding: 10px; 
-}
 
-.card span{
-    color: #fff;
-    font-weight: 500;
-}
 
 
 </style>

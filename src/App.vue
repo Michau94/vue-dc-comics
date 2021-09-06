@@ -52,4 +52,14 @@ body{
 .clickable{
   cursor: pointer;
 }
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
 </style>

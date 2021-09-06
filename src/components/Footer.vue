@@ -82,7 +82,7 @@ export default {
 }
 </script>
 
-<style scooped>
+<style lang="scss" scooped>
 
 footer{
     background-image: url('../assets/img/footer-bg.jpg');
@@ -93,12 +93,6 @@ footer{
     overflow: hidden;
 }
 
-.wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-}
 
 .logo{
     align-self: center;
@@ -106,18 +100,18 @@ footer{
 
 ul{
     list-style-type: none;
+    li {
+        margin: 5px 0 ;
+
+        a {
+        text-decoration: none;
+        color: lightgrey;
+        
+            }
+    }
 }
 
-ul li {
-    margin: 5px 0 ;
 
-}
-
-ul li a {
-    text-decoration: none;
-    color: lightgrey;
-    
-}
 
 .links{
     padding:10px;
@@ -133,11 +127,6 @@ ul li a {
     text-transform: uppercase;
     font-weight: bold;
 }
-
-
- 
-
-
 
 
 </style>
