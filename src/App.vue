@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <Header/>
-    <Content/>
-    <Bonus/>
-    <Footer/>
-    <Media/>
+    <Header />
+    <main>
+      <Content />
+      <Bonus />
+    </main>
+    <Footer />
+    <Media />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Content from '@/components/Content.vue'
-import Footer from '@/components/Footer.vue'
-import Media from '@/components/Media.vue'
-import Bonus from '@/components/Bonus.vue'
-
+import Header from "@/components/Header.vue";
+import Content from "@/components/Content.vue";
+import Footer from "@/components/Footer.vue";
+import Media from "@/components/Media.vue";
+import Bonus from "@/components/Bonus.vue";
 
 export default {
   name: "App",
@@ -23,43 +24,11 @@ export default {
     Content,
     Footer,
     Media,
-    Bonus
-    
+    Bonus,
   },
-  
-}
+};
 </script>
 
 <style lang="scss">
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  font-family: 'Raleway', sans-serif;
-  
-}
-
-.container{
-  max-width: 1500px;
-  margin: 0 auto; 
-  height: 100%;
-}
-
-.clickable{
-  cursor: pointer;
-}
-
-.wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-a {
-  text-decoration: none;
-}
+@import "@/assets/sass/style.scss";
 </style>
