@@ -7,7 +7,7 @@
         <ul>
           <li
             :class="{ active: link.current }"
-            v-for="(link, index) in data.header"
+            v-for="(link, index) in header"
             :key="index"
             @click="currentLink(index)"
           >
@@ -24,65 +24,63 @@ export default {
   name: "Header",
   data() {
     return {
-      data: {
-        header: [
-          {
-            text: "Characters",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "Comics",
-            url: "#",
-            current: true,
-          },
-          {
-            text: "Movies",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "TV",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "Games",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "Collectibles",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "Videos",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "Fans",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "News",
-            url: "#",
-            current: false,
-          },
-          {
-            text: "Shop",
-            url: "#",
-            current: false,
-          },
-        ],
-      },
+      header: [
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
     };
   },
   methods: {
     currentLink(idx) {
-      this.data.header.forEach((el, ind) => {
+      this.header.forEach((el, ind) => {
         ind == idx ? (el.current = true) : (el.current = false);
       });
     },
