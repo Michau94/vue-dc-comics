@@ -65,7 +65,7 @@ export default {
   }
 
   span {
-    color: #fff;
+    color: $text-main;
     font-weight: 500;
   }
 }

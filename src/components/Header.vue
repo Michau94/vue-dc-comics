@@ -9,6 +9,7 @@
             :class="{ active: link.current }"
             v-for="(link, index) in data.header"
             :key="index"
+            @click="currentLink(index)"
           >
             <a :href="link.url">{{ link.text }}</a>
           </li>
@@ -78,6 +79,13 @@ export default {
         ],
       },
     };
+  },
+  methods: {
+    currentLink(idx) {
+      this.data.header.forEach((el, ind) => {
+        ind == idx ? (el.current = true) : (el.current = false);
+      });
+    },
   },
 };
 </script>
