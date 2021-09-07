@@ -46,7 +46,7 @@ export default {
 @import "../assets/sass/vars";
 
 .media {
-  background-color: #242424;
+  background-color: $secondary-bg;
   height: 100px;
 }
 
@@ -66,16 +66,16 @@ export default {
 a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: $text-main;
 }
 
 .button {
   padding: 10px 15px;
-  border: 1px solid #0c7cec;
+  border: 1px solid $base-color;
   height: 50px;
   display: flex;
   align-items: center;
-  color: white;
+  color: $text-main;
   font-weight: bold;
   text-transform: uppercase;
 }

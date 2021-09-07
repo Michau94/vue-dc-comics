@@ -1,47 +1,11 @@
 <template>
   <div class="bonus">
     <div class=" container wrapper">
-      <div class="card">
+      <div class="card" v-for="(card, index) in images" :key="index">
         <figure>
-          <img
-            src="../assets/img/buy-comics-digital-comics.png"
-            alt="DigitalComics"
-          />
+          <img :src="card.path" alt="DigitalComics" />
         </figure>
-        <span>Digital Comics</span>
-      </div>
-      <div class="card">
-        <figure>
-          <img
-            src="../assets/img/buy-comics-merchandise.png"
-            alt="DigitalComics"
-          />
-        </figure>
-        <span>DC Merchandise</span>
-      </div>
-      <div class="card">
-        <figure>
-          <img
-            src="../assets/img/buy-comics-subscriptions.png"
-            alt="DigitalComics"
-          />
-        </figure>
-        <span>Subscription</span>
-      </div>
-      <div class="card">
-        <figure>
-          <img
-            src="../assets/img/buy-comics-shop-locator.png"
-            alt="DigitalComics"
-          />
-        </figure>
-        <span>Comic Shop Locator</span>
-      </div>
-      <div class="card">
-        <figure>
-          <img src="../assets/img/buy-dc-power-visa.svg" alt="DigitalComics" />
-        </figure>
-        <span>DC Power Visa</span>
+        <span>{{ card.text }}</span>
       </div>
     </div>
   </div>
@@ -50,6 +14,32 @@
 <script>
 export default {
   name: "Bonus",
+  data() {
+    return {
+      images: [
+        {
+          path: require("@/assets/img/buy-comics-digital-comics.png"),
+          text: "Digital Comics",
+        },
+        {
+          path: require("@/assets/img/buy-comics-merchandise.png"),
+          text: "DC Merchandise",
+        },
+        {
+          path: require("@/assets/img/buy-comics-subscriptions.png"),
+          text: "Subscription",
+        },
+        {
+          path: require("@/assets/img/buy-comics-shop-locator.png"),
+          text: "Comic Shop Locator",
+        },
+        {
+          path: require("../assets/img/buy-dc-power-visa.svg"),
+          text: "DC Power Visa",
+        },
+      ],
+    };
+  },
 };
 </script>
 
