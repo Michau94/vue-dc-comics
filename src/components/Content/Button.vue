@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/sass/vars.scss";
+@import "../../assets/sass/vars.scss";
 
 .button {
   color: white;

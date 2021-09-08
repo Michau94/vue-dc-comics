@@ -20,8 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/sass/_vars.scss";
-@import "../assets/sass/_mixin.scss";
+@import "../../assets/sass/_vars.scss";
+@import "../../assets/sass/_mixin.scss";
 
 .container {
   @include center("both");
