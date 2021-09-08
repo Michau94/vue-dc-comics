@@ -3,16 +3,19 @@
     <div class="container">
       <Card :data="dcComics" />
     </div>
+    <Button message="Load More" />
   </section>
 </template>
 
 <script>
 import Card from "./Card.vue";
+import Button from "./Button.vue";
 
 export default {
   name: "Content",
   components: {
     Card,
+    Button,
   },
   data() {
     return {
@@ -111,6 +114,7 @@ export default {
 section {
   padding: 20px;
   background-color: black;
+  text-align: center;
 
   h2 {
     color: white;

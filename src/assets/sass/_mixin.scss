@@ -1,0 +1,11 @@
+@mixin center($par: "both") {
+  display: flex;
+  @if ($par: "horizontal") {
+    justify-content: center;
+  } @else if($par: "vertical") {
+    align-items: center;
+  } @else {
+    justify-content: center;
+    align-items: center;
+  }
+}

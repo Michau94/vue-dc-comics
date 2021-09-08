@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <main>
+      <Jumbo />
       <Content />
       <Bonus />
     </main>
@@ -16,6 +17,7 @@ import Content from "./components/Content.vue";
 import Bonus from "./components/Bonus.vue";
 import Footer from "./components/Footer.vue";
 import Media from "./components/Media.vue";
+import Jumbo from "./components/Jumbo.vue";
 
 export default {
   name: "App",
@@ -25,6 +27,7 @@ export default {
     Footer,
     Media,
     Bonus,
+    Jumbo,
   },
 };
 </script>
